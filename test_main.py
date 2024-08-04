@@ -26,7 +26,7 @@ def test_health(client):
     response = client.get('/')
     assert response.status_code == 200
     assert response.json == 'Healthy'
-    assert False
+    # assert False # comment to test if unit tests in pipeline work
 
 
 def test_auth(client):
