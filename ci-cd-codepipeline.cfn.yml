@@ -40,7 +40,7 @@ Parameters:
 
   GitHubUser:
     Type: String
-    Default: SudKul
+    Default: ZhishenZ
     Description: GitHub username or organization
     MinLength: 3
     MaxLength: 100
@@ -130,7 +130,7 @@ Resources:
               'LogicalResourceId': event['LogicalResourceId'],
               'Data': {"Message": "Resource creation successful!"},
             }
-          
+
             http = urllib3.PoolManager()
             client = boto3.client('iam')
             try:
